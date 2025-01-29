@@ -1,0 +1,23 @@
+{
+  "name": {
+    "ru": "Александр",
+    "en": "Alexander"
+  },
+  "lastName": {
+    "ru": "Латышев",
+    "en": "Latyshev"
+  },
+  "age": 22,
+  "bio": {
+    "ru": "Я модель с 5-летним опытом работы в различных стилях съемок, включая моду и коммерческие проекты.",
+    "en": "I am a model with 5 years of experience in various styles of photoshoots, including fashion and commercial projects."
+  },
+  "contact": {
+    "email": "alexanderlatyshev.main@gmail.com",
+    "phone": "+375 (29) 555-15-85",
+    "socials": {
+      "instagram": "https://instagram.com/ivan_ivanov",
+      "linkedin": "https://linkedin.com/in/ivan-ivanov"
+    }
+  }
+}

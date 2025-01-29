@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "name": "Home"
+    },
+    {
+      "path": "/about",
+      "name": "About"
+    },
+    {
+      "path": "/portfolio",
+      "name": "Portfolio"
+    },
+    {
+      "path": "/contacts",
+      "name": "Contact"
+    }
+  ]
+}
