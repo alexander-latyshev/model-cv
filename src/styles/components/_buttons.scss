@@ -1,0 +1,31 @@
+@use "../utils/utils" as *;
+
+.button {
+  padding: $spacing-sm $spacing-md;
+  background-color: $button-bg;
+  color: $button-text;
+  font-size: $font-size-base;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background-color $transition-normal;
+
+  @include respond-to(mobile) {
+    padding: $spacing-sm $spacing-xs-mobile;
+    font-size: $font-size-base-mobile;
+  }
+
+  @include respond-to(tablet) {
+    padding: $spacing-sm $spacing-md-tablet;
+    font-size: $font-size-base-tablet;
+  }
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+
+  &:disabled {
+    background-color: $disabled-bg;
+    color: $disabled-text;
+    cursor: not-allowed;
+  }
+}

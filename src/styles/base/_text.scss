@@ -1,0 +1,52 @@
+@use "../utils/utils" as *;
+
+// General
+h1 {
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  color: $text-color;
+  margin-bottom: $spacing-md;
+}
+
+h2 {
+  font-size: $font-size-lg;
+  line-height: $line-height-base;
+  color: $text-color;
+  margin-bottom: $spacing-md;
+}
+
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  margin-bottom: $spacing-lg;
+}
+
+// Adaptive
+@include respond-to(mobile) {
+  h1 {
+    font-size: $font-size-lg-mobile;
+    line-height: $line-height-lg-mobile;
+    margin-bottom: $spacing-sm-mobile;
+  }
+
+  p {
+    font-size: $font-size-base-mobile;
+    line-height: $line-height-base-mobile;
+    margin-bottom: $spacing-md-mobile;
+  }
+}
+
+@include respond-to(tablet) {
+  h1 {
+    font-size: $font-size-lg-tablet;
+    line-height: $line-height-lg-tablet;
+    margin-bottom: $spacing-sm-tablet;
+  }
+
+  p {
+    font-size: $font-size-base-tablet;
+    line-height: $line-height-base-tablet;
+    margin-bottom: $spacing-lg-tablet;
+  }
+}

@@ -1,0 +1,17 @@
+// Variables
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Mixins for personal use
+@mixin transition(
+  $property,
+  $duration: $transition-normal,
+  $timing-function: ease
+) {
+  transition: $property $duration $timing-function;
+}
+
+@mixin transition-color($time: $transition-normal, $ease: ease) {
+  transition: background-color $time $ease, color $time $ease;
+}

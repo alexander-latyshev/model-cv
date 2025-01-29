@@ -1,0 +1,32 @@
+@use "../utils/utils" as *;
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  transition: color $transition-normal;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $link-hover-color;
+  }
+}
+
+@include respond-to(mobile) {
+  a {
+    font-size: $font-size-base-mobile;
+    line-height: $line-height-base-mobile;
+  }
+}
+
+@include respond-to(tablet) {
+  a {
+    font-size: $font-size-base-tablet;
+    line-height: $line-height-base-tablet;
+  }
+}

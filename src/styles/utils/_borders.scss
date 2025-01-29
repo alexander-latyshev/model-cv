@@ -1,0 +1,18 @@
+// General
+$border-color: #ccc;
+$border-default: 1px solid $border-color;
+$border-radius: 4px;
+$border-radius-lg: 8px;
+
+// Mixins for Borders
+@mixin border($size, $color: $border-color) {
+  border: $size solid $color;
+}
+
+@mixin border-radius($radius: $border-radius) {
+  border-radius: $radius;
+}
+
+@mixin border-none {
+  border: none;
+}

@@ -1,0 +1,22 @@
+@use "../utils/utils" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Granjon LT Std", serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+}

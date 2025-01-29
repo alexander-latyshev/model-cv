@@ -1,0 +1,33 @@
+@use "../utils/utils" as *;
+
+input,
+textarea,
+select {
+  font-family: "Granjon LT Std", serif;
+  padding: $spacing-sm;
+  border: $border-default;
+  border-radius: $border-radius;
+  margin-bottom: $spacing-md;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: $theme-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #bbb;
+  }
+}
+
+label {
+  font-weight: bold;
+  color: $text-color;
+  margin-bottom: $spacing-xs;
+  display: inline-block;
+}
+
+textarea {
+  resize: vertical;
+}

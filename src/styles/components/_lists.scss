@@ -1,0 +1,35 @@
+@use "../utils/utils" as *;
+
+ul,
+ol {
+  margin-bottom: $spacing-lg;
+  padding-left: $spacing-md;
+}
+
+li {
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: $line-height-base;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+@include respond-to(tablet) {
+  ul,
+  ol {
+    margin-left: $spacing-sm-tablet;
+  }
+}
+
+@include respond-to(mobile) {
+  ul,
+  ol {
+    margin-left: $spacing-xs-mobile;
+  }
+}

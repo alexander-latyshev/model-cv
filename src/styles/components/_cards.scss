@@ -1,0 +1,29 @@
+@use "../utils/utils" as *;
+
+.card {
+  background-color: white;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: $spacing-md;
+  margin-bottom: $spacing-lg;
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow $transition-normal ease;
+  }
+}
+
+.card-header {
+  font-size: $font-size-lg;
+  font-weight: bold;
+}
+
+.card-body {
+  font-size: $font-size-base;
+  color: $text-color;
+}
+
+.card-footer {
+  margin-top: $spacing-sm;
+  text-align: right;
+}

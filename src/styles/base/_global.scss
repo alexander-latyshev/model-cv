@@ -1,0 +1,38 @@
+@use "../utils/colors" as *;
+@use "../utils/spacing" as *;
+
+body {
+  font-family: "Granjon LT Std", serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+
+  @include respond-to(mobile) {
+    font-size: $font-size-base-mobile;
+    line-height: $line-height-base-mobile;
+  }
+
+  @include respond-to(tablet) {
+    font-size: $font-size-base-tablet;
+    line-height: $line-height-base-tablet;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+
+  @include respond-to(tablet) {
+    max-width: 960px;
+    padding: $spacing-md-tablet;
+  }
+
+  @include respond-to(mobile) {
+    max-width: 100%;
+    padding: $spacing-sm-mobile;
+  }
+}
