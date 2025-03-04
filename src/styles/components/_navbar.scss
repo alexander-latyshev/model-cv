@@ -49,7 +49,7 @@
       height: 100vh;
       background-color: $primary-color;
       flex-direction: column;
-      gap: $spacing-sm;
+      gap: $spacing-lg;
       padding: $spacing-md;
       z-index: 1001;
       color: red !important;
@@ -96,7 +96,7 @@
       bottom: 0;
       background-color: $primary-color;
       flex-direction: column;
-      gap: $spacing-sm;
+      gap: $spacing-lg;
       padding: $spacing-md;
 
       &.active {
