@@ -1,0 +1,36 @@
+@use "../../styles/utils/utils" as *;
+
+.text {
+  max-width: max-content;
+  border-right: 3px solid;
+  animation: blink 1s step-end infinite, type 2.5s steps(29) forwards;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @include respond-to(mobile) {
+    font-size: $font-size-base-mobile;
+  }
+
+  @include respond-to(tablet) {
+    font-size: $font-size-base-tablet;
+  }
+
+  @include respond-to(desktop) {
+    font-size: $font-size-lg;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 29ch;
+  }
+}
