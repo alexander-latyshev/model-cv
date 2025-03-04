@@ -16,7 +16,7 @@ const Contact = () => {
     <section className="contact container">
       <SocialLinks items={socialData.links} icons={icons} />
       <PhotoCard
-        imageUrl="https://res.cloudinary.com/dw27jvt6i/image/upload/v1740067256/IMG_4508_g04rjy.webp"
+        imageUrl="https://res.cloudinary.com/dw27jvt6i/image/upload/v1741128938/contacts_pg_lztqvw.webp"
         altText="main-img"
         classname="contact__img"
       />

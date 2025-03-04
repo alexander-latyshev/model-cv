@@ -1,5 +1,7 @@
 .contact {
+  padding-top: 100px;
   .contact__img {
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 100vh;
   }
 }
