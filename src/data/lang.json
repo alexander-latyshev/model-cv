@@ -1,0 +1,92 @@
+{
+  "languages": {
+    "ru": { "name": "Русский", "code": "RU", "signature": "RUS" },
+    "en": { "name": "English", "code": "EN", "signature": "ENG" }
+  },
+  "content": {
+    "en": {
+      "personalInfoTitle": "Personal Information:",
+      "personalInfo": [
+        "Height: 181 cm",
+        "Age: 22 years",
+        "Weight: 66 kg",
+        "Shoe Size: 41 EU",
+        "Skin Color: White"
+      ],
+      "bodyMeasurementsTitle": "Body Measurements:",
+      "bodyMeasurements": [
+        "Shoulders: 115 cm",
+        "Biceps: 35 cm",
+        "Chest: 95 cm",
+        "Waist: 69 cm",
+        "Hips: 90 cm"
+      ],
+      "physicalCharacteristicsTitle": "Physical Characteristics:",
+      "physicalCharacteristics": [
+        "Hair Color: Dark Blonde",
+        "Eye Color: Dark Brown",
+        "Body Shape: Inverted Triangle (V-taper)",
+        "Face Shape: Rectangular",
+        "Tattoos: None",
+        "Clothing Size: XS-S (44-46)",
+        "English Level: B1",
+        "Flexibility: Good"
+      ],
+      "bodyProportionsTitle": "Body Proportions:",
+      "bodyProportions": [
+        "Shoulder-to-Waist Ratio: 1.67",
+        "Waist-to-Hips Ratio: 0.77",
+        "Waist-to-Chest Ratio: 0.73",
+        "Arm-to-Waist Ratio: 0.51"
+      ],
+      "languagesTitle": "Languages:",
+      "languages": [
+        { "name": "English", "level": "B1" },
+        { "name": "Russian", "level": "Native" },
+        { "name": "Belarusian", "level": "Native" }
+      ]
+    },
+    "ru": {
+      "personalInfoTitle": "Личная информация:",
+      "personalInfo": [
+        "Рост: 181 см",
+        "Возраст: 22 года",
+        "Вес: 66 кг",
+        "Размер обуви: 41 EU",
+        "Цвет кожи: Белый"
+      ],
+      "bodyMeasurementsTitle": "Измерения тела:",
+      "bodyMeasurements": [
+        "Плечи: 115 см",
+        "Бицепс: 35 см",
+        "Грудь: 95 см",
+        "Талия: 69 см",
+        "Бедра: 90 см"
+      ],
+      "physicalCharacteristicsTitle": "Характеристики:",
+      "physicalCharacteristics": [
+        "Цвет волос: Темно-русые",
+        "Цвет глаз: Темно-карие",
+        "Телосложение: Перевернутый треугольник (V-taper)",
+        "Форма лица: Прямоугольная",
+        "Татуировки: Отсутствуют",
+        "Размер одежды: XS-S (44-46)",
+        "Уровень английского: B1",
+        "Растяжка: Хорошая"
+      ],
+      "bodyProportionsTitle": "Пропорции тела:",
+      "bodyProportions": [
+        "Коэффициент плеч к талии: 1,67",
+        "Коэффициент талии к бедрам: 0,77",
+        "Коэффициент талии к груди: 0,73",
+        "Коэффициент рук к талии: 0,51"
+      ],
+      "languagesTitle": "Языки:",
+      "languages": [
+        { "name": "Английский", "level": "B1" },
+        { "name": "Русский", "level": "Родной" },
+        { "name": "Белорусский", "level": "Родной" }
+      ]
+    }
+  }
+}

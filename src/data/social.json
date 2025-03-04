@@ -1,0 +1,9 @@
+{
+    "links": [
+      { "name": "instagram", "url": "https://instagram.com/yourusername" },
+      { "name": "telegram", "url": "https://t.me/yourusername" },
+      { "name": "email", "url": "mailto:your.email@example.com" },
+      { "name": "linkedIn", "url": "https://www.linkedin.com/in/yourusername/" }
+    ]
+  }
+  

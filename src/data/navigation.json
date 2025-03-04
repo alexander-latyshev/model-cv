@@ -1,20 +1,32 @@
 {
-  "routes": [
-    {
-      "path": "/",
-      "name": "Home"
-    },
-    {
-      "path": "/about",
-      "name": "About"
-    },
-    {
-      "path": "/portfolio",
-      "name": "Portfolio"
-    },
-    {
-      "path": "/contacts",
-      "name": "Contact"
-    }
-  ]
+  "routes": {
+    "en": [
+      {
+        "path": "/about",
+        "name": "About"
+      },
+      {
+        "path": "/portfolio",
+        "name": "Portfolio"
+      },
+      {
+        "path": "/contacts",
+        "name": "Contacts"
+      }
+    ],
+    "ru": [
+      {
+        "path": "/about",
+        "name": "О себе"
+      },
+      {
+        "path": "/portfolio",
+        "name": "Портфолио"
+      },
+      {
+        "path": "/contacts",
+        "name": "Контакты"
+      }
+    ]
+  }
 }
