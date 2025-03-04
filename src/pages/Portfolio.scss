@@ -1,0 +1,82 @@
+@use "../styles/layout/flex" as *;
+@use "/src/styles/utils/_utils.scss" as *;
+
+.portfolio {
+  gap: 20px;
+  @include flex-column;
+
+  .parallax-container {
+    min-height: 100%;
+    user-select: none;
+
+    .react-parallax-bgimage {
+      object-fit: contain;
+    }
+
+    &:last-of-type {
+      .react-parallax-bgimage {
+        left: 60% !important;
+        width: 120% !important;
+        object-fit: cover;
+      }
+    }
+
+    div {
+      min-height: 100%;
+    }
+  }
+
+  .portfolio__img-wrapper {
+    @include flex-space-between;
+    @include flex-row;
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+    font-stretch: expanded;
+
+    .portfolio__image {
+      object-fit: cover;
+      height: 1000px;
+
+      @include respond-to(tablet) {
+        height: 800px;
+      }
+
+      @include respond-to(mobile) {
+        height: 450px;
+      }
+    }
+
+    h2 {
+      line-height: 250px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      width: 300px;
+      vertical-align: middle;
+      word-wrap: break-word;
+      font-size: 270px;
+      position: absolute;
+      user-select: none;
+      left: 33%;
+      z-index: 3;
+      color: white;
+      text-transform: uppercase;
+
+      @include respond-to(tablet) {
+        font-size: 240px;
+        line-height: 200px;
+        left: 30%;
+      }
+
+      @include respond-to(mobile) {
+        font-size: 130px;
+        line-height: 150px;
+        width: 100px;
+        left: 55%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

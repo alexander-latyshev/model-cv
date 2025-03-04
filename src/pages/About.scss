@@ -1,0 +1,35 @@
+@use "../styles/utils/_utils.scss" as *;
+
+.about-page {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 90px;
+  @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page__text {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    span {
+      height: max-content;
+      margin-right: auto;
+    }
+    @include respond-to(mobile) {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .about-img {
+      width: 280px;
+      margin-right: auto;
+    }
+  }
+}
