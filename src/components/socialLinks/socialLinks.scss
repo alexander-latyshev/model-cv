@@ -1,0 +1,26 @@
+@use "/src/styles/utils/utils" as *;
+@use "/src/styles/layout/layout" as *;
+@use "/src/styles/utils/_utils.scss" as *;
+
+.social-links {
+  @include flex-space-between;
+  @include flex-column;
+  position: absolute;
+  top: 155px;
+  gap: 25px;
+  padding: 15px;
+  z-index: 1;
+  background-color: $background-color;
+  border-radius: $border-radius;
+
+  @include respond-to(tablet) {
+    top: 80px;
+    gap: $spacing-xl-tablet;
+    padding: $spacing-sm-tablet;
+  }
+
+  @include respond-to(mobile) {
+    gap: $spacing-xl-mobile;
+    padding: $spacing-xs-mobile;
+  }
+}
