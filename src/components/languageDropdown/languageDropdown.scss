@@ -7,7 +7,7 @@
   // active styles
   .ant-dropdown-open {
     .anticon {
-      // color: $theme-color;
+      color: $theme-color;
       transform: rotate(180deg);
     }
   }
@@ -38,12 +38,10 @@
       padding: $spacing-sm;
     }
   }
-  
   .ant-dropdown-menu-item-active {
     color: $theme-color !important;
     background-color: rgba($theme-color, 0.1) !important;
   }
-
   .ant-dropdown-menu {
     background-color: $background-color;
     color: $text-color;
