@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Granjon LT Std";
+  src: url("/src/font/GranjonLTStd-Italic.woff2") format("woff2"),
+    url("/src/font/GranjonLTStd-Italic.woff") format("woff"),
+    url("/src/font/GranjonLTStd-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Granjon LT Std";
+  src: url("/src/font/GranjonLTStd-Bold.woff2") format("woff2"),
+    url("/src/font/GranjonLTStd-Bold.woff") format("woff"),
+    url("/src/font/GranjonLTStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Granjon LT Std";
+  src: url("/src/font/GranjonLTStd.woff2") format("woff2"),
+    url("/src/font/GranjonLTStd.woff") format("woff"),
+    url("/src/font/GranjonLTStd.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

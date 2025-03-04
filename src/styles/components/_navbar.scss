@@ -1,40 +1,64 @@
 @use "../utils/utils" as *;
 
 .navbar {
-  background-color: $primary-color;
-  padding: $spacing-sm $spacing-lg;
+  background-color: $background-color;
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 1000;
-  border-bottom: $border-default;
   border-radius: $border-radius;
   .logo {
-    color: $button-text;
+    color: $text-color;
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
   }
 
   .navbar-links {
     display: flex;
-    gap: $spacing-md;
-  }
+    gap: $spacing-sm;
+    margin: 0;
+    a {
+      color: $text-color;
+      text-decoration: none;
+      padding: $spacing-sm;
+      font-size: $font-size-base;
+      transition: color $transition-normal;
 
-  .navbar-links a {
-    color: $button-text;
-    text-decoration: none;
-    padding: $spacing-sm;
-    font-size: $font-size-base;
-    transition: color $transition-normal;
+      &:hover {
+        color: $theme-color;
+      }
 
-    &:hover {
-      color: $theme-color;
+      &:active {
+        color: $link-hover-color;
+      }
     }
 
-    &:active {
-      color: $link-hover-color;
+    &.active {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: $primary-color;
+      flex-direction: column;
+      gap: $spacing-sm;
+      padding: $spacing-md;
+      z-index: 1001;
+      color: red !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a.active {
+      color: $theme-color;
     }
   }
 
@@ -47,7 +71,7 @@
     div {
       width: 25px;
       height: 3px;
-      background-color: $button-text;
+      background-color: $text-color;
       border-radius: $border-radius;
     }
   }
@@ -65,10 +89,11 @@
   @include respond-to(mobile) {
     .navbar-links {
       display: none;
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 0;
       left: 0;
       right: 0;
+      bottom: 0;
       background-color: $primary-color;
       flex-direction: column;
       gap: $spacing-sm;
@@ -79,6 +104,7 @@
       }
 
       a {
+        color: $button-text;
         padding: $spacing-sm;
         font-size: $font-size-base-mobile;
         text-align: center;
@@ -92,7 +118,7 @@
       div {
         width: 30px;
         height: 3px;
-        background-color: $button-text;
+        background-color: $text-color;
         border-radius: $border-radius;
       }
     }

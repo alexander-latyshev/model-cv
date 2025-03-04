@@ -1,30 +1,30 @@
-.flex-center {
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-row {
+@mixin flex-row {
   display: flex;
   flex-direction: row;
 }
 
-.flex-column {
+@mixin flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.flex-wrap {
+@mixin flex-wrap {
   display: flex;
   flex-wrap: wrap;
 }
 
-.flex-space-between {
+@mixin flex-space-between {
   display: flex;
   justify-content: space-between;
 }
 
-.flex-space-around {
+@mixin flex-space-around {
   display: flex;
   justify-content: space-around;
 }

@@ -1,8 +1,12 @@
 @use "../utils/colors" as *;
 @use "../utils/spacing" as *;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Granjon LT Std", serif;
+  font-family: "ABChanel Corpo Regular";
   font-size: $font-size-base;
   line-height: $line-height-base;
   background-color: $background-color;
@@ -25,7 +29,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: $spacing-lg;
-
+  overflow: hidden;
+  position: relative;
   @include respond-to(tablet) {
     max-width: 960px;
     padding: $spacing-md-tablet;

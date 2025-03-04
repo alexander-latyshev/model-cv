@@ -19,7 +19,7 @@ p {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-sm;
 }
 
 // Adaptive
@@ -33,7 +33,7 @@ p {
   p {
     font-size: $font-size-base-mobile;
     line-height: $line-height-base-mobile;
-    margin-bottom: $spacing-md-mobile;
+    margin-bottom: $spacing-sm-mobile;
   }
 }
 
@@ -47,6 +47,6 @@ p {
   p {
     font-size: $font-size-base-tablet;
     line-height: $line-height-base-tablet;
-    margin-bottom: $spacing-lg-tablet;
+    margin-bottom: $spacing-sm-tablet;
   }
 }
