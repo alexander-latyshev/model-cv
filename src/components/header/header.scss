@@ -1,0 +1,28 @@
+@use "/src/styles/utils/_utils.scss" as *;
+@use "/src/styles/layout/flex" as *;
+
+.header {
+  @include flex-space-between;
+  align-items: center;
+  position: fixed;
+  min-width: 100%;
+  max-width: 1200px;
+  z-index: 1000;
+  background-color: $background-color;
+  height: 100px;
+  .header__wrapper {
+    padding: $spacing-lg;
+    @include flex-space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1000;
+    background-color: $background-color;
+    @include respond-to(tablet) {
+      flex-direction: row-reverse;
+    }
+  }
+}
