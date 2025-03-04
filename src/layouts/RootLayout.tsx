@@ -1,15 +1,13 @@
-import React from "react";
-import { Outlet, useLocation } from "react-router";
+import { Outlet } from "react-router";
 import Header from "../components/header/header";
-import "./RootLayout.scss";
 
 const RootLayout = () => {
   return (
     <>
       <Header />
-      <div className="main-container">
+      <main className="container">
         <Outlet />
-      </div>
+      </main>
     </>
   );
 };
