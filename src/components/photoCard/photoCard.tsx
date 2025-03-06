@@ -7,12 +7,14 @@ interface PhotoCardProps {
   imageUrl: string;
   altText: string;
   classname: string;
+  draggable?: boolean;
 }
 
 const PhotoCard: React.FC<PhotoCardProps> = ({
   imageUrl,
   altText,
   classname,
+  draggable,
 }) => {
   return (
     <motion.div
@@ -28,6 +30,7 @@ const PhotoCard: React.FC<PhotoCardProps> = ({
         width="100%"
         height="auto"
         className={`${classname}`}
+        draggable={draggable}
       />
     </motion.div>
   );
