@@ -3,5 +3,6 @@
   .contact__img {
     object-fit: contain;
     max-height: 100vh;
+    user-select: none;
   }
 }

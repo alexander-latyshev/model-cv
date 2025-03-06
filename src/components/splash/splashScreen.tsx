@@ -9,7 +9,7 @@ const imageUrls = [
   "https://res.cloudinary.com/dw27jvt6i/image/upload/v1740067257/IMG_4930_o4liip.webp",
   "https://res.cloudinary.com/dw27jvt6i/image/upload/v1740067256/IMG_4799_tif5pp.webp",
   "https://res.cloudinary.com/dw27jvt6i/image/upload/v1740075557/IMG_20250208_004208_8701_dosxxa.webp",
-  "https://res.cloudinary.com/dw27jvt6i/image/upload/v1741128938/contacts_pg_lztqvw.webp",
+  "https://res.cloudinary.com/dw27jvt6i/image/upload/v1741234383/web_resume_contacts_page2_cqqfvf.webp",
 ];
 
 const MIN_DISPLAY_TIME = 2000;

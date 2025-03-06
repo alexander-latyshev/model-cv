@@ -16,9 +16,10 @@ const Contact = () => {
     <section className="contact container">
       <SocialLinks items={socialData.links} icons={icons} />
       <PhotoCard
-        imageUrl="https://res.cloudinary.com/dw27jvt6i/image/upload/v1741128938/contacts_pg_lztqvw.webp"
+        imageUrl="https://res.cloudinary.com/dw27jvt6i/image/upload/v1741234383/web_resume_contacts_page2_cqqfvf.webp"
         altText="main-img"
         classname="contact__img"
+        draggable={false}
       />
     </section>
   );
