@@ -17,6 +17,7 @@ const About = () => {
           }
           altText="img"
           classname="about-img"
+          draggable={false}
         />
         <span>
           <TypewriterEffect text={content.personalInfoTitle} />
