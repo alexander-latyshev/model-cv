@@ -22,7 +22,7 @@ const Portfolio = () => {
       </Parallax>
       <div className="portfolio__img-wrapper">
         <PhotoCard
-          imageUrl="https://res.cloudinary.com/dw27jvt6i/image/upload/v1740067257/IMG_4959_sd0abm.webp"
+          imageUrl="https://res.cloudinary.com/dw27jvt6i/image/upload/v1741346543/IMG_4964_cut_rq6kd2.webp"
           altText="img"
           classname="portfolio__image"
         />
