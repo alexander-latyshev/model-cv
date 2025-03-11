@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IRoute } from "../../models/navigation";
 import NavItem from "./navItem";
 
@@ -11,9 +11,12 @@ const NavBar = (props: Props) => {
   const { items, pathname } = props;
   const [menuActive, setMenuActive] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = menuActive ? "hidden" : "visible";
+  }, [menuActive]);
+
   const toggleMenu = () => {
-    setMenuActive(!menuActive);
-    document.body.style.overflow = menuActive ? "auto" : "hidden";
+    setMenuActive((prev) => !prev);
   };
 
   return (
